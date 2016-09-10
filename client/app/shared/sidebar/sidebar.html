@@ -1,0 +1,37 @@
+<aside id="sidebar">
+    <div class="sidenav-outer">
+        <div class="side-menu">
+            <div class="menu-body">
+                <ul class="nav nav-pills nav-stacked sidenav">
+                    <li>
+                        <a [routerLink]="['home']">
+                            <i class="fa fa-home"></i>
+                        </a>
+                        <ul class="nested-dropdown animated">
+                            <li><a [routerLink]="['home']">Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a [routerLink]="['tables']">
+                            <i class="fa fa-list"></i>
+                        </a>
+                        <ul class="nested-dropdown animated">
+                            <li><a [routerLink]="['tables']">Tables</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="side-widgets">
+            <div class="widgets-content">
+                <center class="profile">
+                    <a [routerLink]="['profile']"><img src="assets/images/flat-avatar.png" class="user-avatar" /></a>
+                    <div class="text-center avatar-name">HJL</div>
+                </center>
+                <div class="calendar-container text-center">
+                    <div id="calendar1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
